@@ -13,7 +13,7 @@ def generate_sequence(difficulty):
         random_numbers.append(random.randrange(1, 101))
     print(random_numbers)
     time.sleep(0.7)
-    os.system('cls')
+    os.system('clear')
     return random_numbers
 
 
