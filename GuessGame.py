@@ -30,9 +30,8 @@ def play(difficulty):
     get_guess_from_user(difficulty)
     compare_results()
 
-    if secret_number == guess:
+    if int(secret_number) == int(guess):
         print(True)
     else:
         print(False)
-
 # play()

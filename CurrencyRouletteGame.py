@@ -19,10 +19,11 @@ def get_guess_from_user(difficulty):
     user_guess = input("What is your guess?: ")
     if user_guess == t:
         print("Awesome, you right! " + "The number is: " + str(t))
-        return int(user_guess)
+        print (int(user_guess))
+        return True
     else:
         print("Please try again " + "The number is: " + str(t))
-
+        return False
 
 def play(difficulty):
     get_money_interval(difficulty)

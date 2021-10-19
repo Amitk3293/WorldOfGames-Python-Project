@@ -1,3 +1,10 @@
+import time
+from MainScores import *
+from MemoryGame import *
+from GuessGame import *
+from CurrencyRouletteGame import *
+from Score import *
+
 def welcome():
     name = input("Hello, what's your name? ")
     print("Hello " + name + " and welcome to the World of Games (WOG)")
@@ -33,14 +40,27 @@ welcome()
 load_game()
 chosen_game()
 
+
 if game == 1:
     from MemoryGame import play
-    play(difficulty)
+    win = play(difficulty)
+    if win == True:
+        score(difficulty)
 
 elif game == 2:
     from GuessGame import play
-    play(difficulty)
+    win = play(difficulty)
+    if win == True:
+        score(difficulty)
 
 elif game == 3:
     from CurrencyRouletteGame import play
-    play(difficulty)
+    win = play(difficulty)
+    if win == True:
+        score(difficulty)
+
+
+
+
+create_file()
+score(difficulty)
