@@ -8,11 +8,6 @@ def create_file():
         file = open('Scores.txt', 'w')
         file.write("0")
         file.close()
-# def create_file():
-#     file = open('Scores.txt', 'w')
-#     file.write("0")
-#     file.close()
-
 
 def score(difficulty):
     file = open('Scores.txt', 'r')
@@ -25,4 +20,3 @@ def score(difficulty):
     file = open('Scores.txt', 'w')
     file.write(str(new_score))
     file.close()
-
