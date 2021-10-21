@@ -17,12 +17,12 @@ def test_scores_archive():
 
 def main_function():
     test_scores_archive()
-    if scoreid == True:
+    if test_scores_archive() == True:
+        print("Everyhing seems fine")
         sys.exit(0)
     else:
+        print("Something wrong!")
         sys.exit(-1)
 
 
 main_function()
-
-
