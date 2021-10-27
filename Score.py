@@ -20,3 +20,6 @@ def score(difficulty):
     file = open('Scores.txt', 'w')
     file.write(str(new_score))
     file.close()
+
+
+    
