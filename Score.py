@@ -22,4 +22,4 @@ def score(difficulty):
     file.close()
 
 
-    
+create_file()

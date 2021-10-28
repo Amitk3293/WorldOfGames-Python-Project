@@ -8,12 +8,13 @@ RUN pip3 install flask
 
 COPY MainScores.py .
 COPY requirements.txt .
+COPY Scores.txt .
 
 EXPOSE 5000
 
 VOLUME [ "/app" ]
 
-CMD [ "python3", "MainScores.py" ]
+ENTRYPOINT [ "python3", "MainScores.py" ]
 
 RUN echo "This Flask i exposed on port 5000"
 
@@ -33,6 +34,8 @@ VOLUME [ "/app" ]
 
 EXPOSE 8000
 
-CMD [ "python3", "MainGame.py" ]
+RUN echo 0 > Scores.txt MainScores.py
+
+ENTRYPOINT [ "python3", "MainGame.py" ]
 
 RUN echo "WOG app is exposed on port 8000"
