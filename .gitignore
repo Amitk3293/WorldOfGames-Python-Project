@@ -1,0 +1,7 @@
+Scores.txt
+__pycache__
+values.yaml
+geckodriver.log
+Chart.yaml
+.helmignore
+templates/
