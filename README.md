@@ -5,18 +5,17 @@ This repository is a tutorial of full ci/cd flow for my Python game.
 
 # Stack
 
-1.Self written game and Flask web server in Python
+3.This Github repository
 
-2.Functional tests using Selenium to the python application
+2.A Python-based game with a Flask web server
 
-3.Github repository
+3.A Python-based functional web tests using Selenium to the python application
 
 4.Jenkins
 
-3.Docker image built using Dockerfile
+5.Docker image built using Dockerfile
 
-4.Running Containers using docker-compose 
-
+6.Running Containers using docker-compose 
 
 # CI/CD Flow
 
@@ -29,7 +28,6 @@ This repository is a tutorial of full ci/cd flow for my Python game.
 4.Run functional and health tests with self written Python app using Selenium package 
 
 5.Push Docker image to docker.io
-
 
 
 ## Author
