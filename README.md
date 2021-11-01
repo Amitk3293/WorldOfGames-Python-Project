@@ -21,7 +21,7 @@ This repository is a tutorial of full ci/cd flow written by me for my Python gam
 
 1.Code checkout from Github repository.
 
-2.Build and run application using Docker, Dockerfile, and Docker-compose.
+2.Build and run the containerized applications using Docker, Dockerfile, and Docker-compose.
 
 3.Run functional and health tests with self written Python app using Selenium package. 
 
